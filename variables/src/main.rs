@@ -45,8 +45,25 @@ fn main() {
     // Compound Types
     // Compound types can group multiple values into one type
     // Rust has two primitive compound types: tuples and arrays
+
+    // Tuples
     let tup = (500, 6.4, 1);
     let (x, y, z) = tup;
     println!("The values of x, y, and z are: {x}, {y}, {z}");
+    // We can also access a tuple element directly by using a period (.) followed by the index of the value we want to access
+    let five_hundred = tup.0;
+    println!("The value of five_hundred is: {five_hundred}");
+    // Empty tuples are also a type, and are written as () or Unit
+
+    // Arrays
+    // Arrays in Rust are FIXED in length, and can only contain elements of the same type
+    let arr: [i32; 5] = [1, 2, 3, 4, 5];
+    // We can access an array element by using square brackets and the index of the value we want to access
+    let third = arr[3];
+    println!("The value of third is: {third}");
+    // We can also initialize an array with the same value for each element
+    let arr = [3; 5];
+    // This creates an array with 5 elements, each with the value 3
+    // Note: Rust will panic if we try to access an array element that does not exist
 
 }
