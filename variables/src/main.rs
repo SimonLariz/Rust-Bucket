@@ -10,6 +10,7 @@ fn main() {
     // Constants are always immutable, and must be annotated with a type
     // Naming convention is to use all uppercase with underscores between words
     const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
+    println!("The value of THREE_HOURS_IN_SECONDS is: {THREE_HOURS_IN_SECONDS}");
 
     // Shadowing
     // Shadowing allows us to redeclare a variable with the same name
@@ -22,4 +23,12 @@ fn main() {
     }
 
     println!("The value of y is: {y}");
+
+    // Shadowing allows us to change the type of a variable
+    // mut does not allow this, since we can not mutate the type of a variable
+    let spaces = "   ";
+    println!("The value of spaces is: {spaces}");
+    let spaces = spaces.len();
+    println!("The value of spaces is: {spaces}");
+
 }
