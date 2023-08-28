@@ -106,4 +106,12 @@ fn main() {
         println!("the value is: {}", element);
     }
     
+    // for loops can also be used to loop through a range
+    println!("Looping through a range with for");
+    // .rev reverses the range
+    // range is inclusive on the start and exclusive on the end
+    for number in (1..4).rev() {
+        println!("{}!", number);
+    }
+    println!("LIFTOFF!!!");
 }
