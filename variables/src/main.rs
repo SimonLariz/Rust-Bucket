@@ -31,4 +31,22 @@ fn main() {
     let spaces = spaces.len();
     println!("The value of spaces is: {spaces}");
 
+    // Data Types
+    // Rust is a statically typed language, meaning it must know the types of all variables at compile time
+
+    // Scalar Types
+    // Rust has four primary scalar types: integers, floating-point numbers, Booleans, and characters
+    let integer: u32 = 5;
+    let float: f32 = 5.8;
+    let boolean: bool = true;
+    let character: char = 'a';
+    println!("The values of integer, float, boolean, and character are: {integer}, {float}, {boolean}, {character}");
+
+    // Compound Types
+    // Compound types can group multiple values into one type
+    // Rust has two primitive compound types: tuples and arrays
+    let tup = (500, 6.4, 1);
+    let (x, y, z) = tup;
+    println!("The values of x, y, and z are: {x}, {y}, {z}");
+
 }
