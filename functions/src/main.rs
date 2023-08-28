@@ -26,6 +26,8 @@ fn main() {
     // functions with return values
     let x = six();
     println!("The value of x is: {x}");
+    let x = plus_one(x);
+    println!("The value of x after plus_one(x): {x}");
 }
 
 // function definitions start with fn
@@ -47,4 +49,9 @@ fn another_function_with_multiple_parameters(x: i32, y: char) {
 // the return type is declared after the arrow ->
 fn six() -> i32 {
     6 // this is an expression that evaluates to 5
+}
+
+// function with parameter and return value
+fn plus_one(x: i32) -> i32 {
+    x + 1
 }
